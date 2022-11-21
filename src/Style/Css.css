@@ -51,3 +51,13 @@ ft{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#CFAC62;
 } 
+article {
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#CFAC62;
+}
+a{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#ffffff;
+}
