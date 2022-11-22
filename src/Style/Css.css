@@ -22,7 +22,7 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:white
 }
-h2{font-size: 15px;
+h2{font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#CFAC62}
 
@@ -61,3 +61,13 @@ a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#ffffff;
 }
+textarticle{font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff
+
+
+}
+but{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#CFAC62;
