@@ -1,3 +1,4 @@
+
 body {
     background-color: #152F5B;}
 T {
@@ -10,7 +11,7 @@ little {
     color: #CFAC62}
 
 little {
-    font-size: 20px;
+    font-size: 30px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: right;
 
@@ -26,6 +27,10 @@ h2{font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#CFAC62}
 
+a2{font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#CFAC62}
+
 .center {
     text-align: center;
 }
@@ -33,6 +38,31 @@ h2{font-size: 16px;
 PaysageB{opacity: 0.2;
 
 }
+#menu-vertical, #menu-vertical ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    width: 180px; /* seule ligne rajoutée */
+  }
+  #menu-vertical li {
+    position: relative;
+    background:#0F2439; /* juste pour cacher le texte de la page en-dessous */
+  }
+  #menu-vertical a {
+    display:block;
+    text-decoration: none;
+    color: #CFAC62;
+  }
+
+  #menu-vertical ul {
+    position: absolute;
+    left:-999em;
+  }
+
+  #menu-vertical li:hover ul {
+    top: 0;
+    left: 180px;
+  }
 .container {
     position: relative;
     text-align: center;
@@ -47,13 +77,13 @@ PaysageB{opacity: 0.2;
     transform: translate(-50%, -50%);
   }
 ft{ 
-    font-size: 20px;
+    font-size: 22px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#CFAC62;
 } 
 
 ff{ 
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Trebuchet MS', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#fffffe;
 } 
@@ -67,13 +97,23 @@ a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#ffffff;
 }
+N{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff}
+    
 textarticle{font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:#ffffff
+    color:#ffffff}
 
+fr{
+    font-size: 13px;
+    font-family: 'Trebuchet MS', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;}
 
-}
 but{
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#CFAC62;}
+
+footer{background-color: #0F2439;}
