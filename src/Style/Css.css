@@ -51,6 +51,12 @@ ft{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#CFAC62;
 } 
+
+ff{ 
+    font-size: 15px;
+    font-family: 'Trebuchet MS', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#fffffe;
+} 
 article {
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -70,4 +76,4 @@ textarticle{font-size: 20px;
 but{
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:#CFAC62;
+    color:#CFAC62;}

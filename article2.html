@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Article1</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="src/Style/Css.css">
     </head>
 
@@ -14,3 +15,28 @@
             <a href="index.html">MASSILIA</a>
             <br><little>Le Marseille d'hier</little>
         </header>
+        <article>
+            <br><TitreArtcile>
+                Bad Boys
+            </TitreArtcile>
+            <br><img src="public/img/image 22.webp" alt="Image Bad Boys" style="width:395px;height:395px;">
+            <textarticle> Ce son est issu de l’album Métèque et Mat, sorti en 1995 cet album ne fut pas un succès comme avait connu AKH avec le groupe IAM. Paradoxalement à ce « flop » plusieurs singles on connut des succès comme le son « Bad Boys de Marseille Part.2 ». Utilisé notamment par le Stade Vélodrome pour l’entrainement de ses joueurs, le son est une référence de l’identité marseillaise.</textarticle>
+            <div class="accordeon">
+                <section x-data="{open:false}">
+                  <button @click="open = !open">Voir NTM</button>
+                  <p x-show="open"><img src="public/img/NTM.webp" alt="Album NTM" style="width:200px;height:200px;"></p>
+                </section>
+
+            <div class="accordeon">
+                <section x-data="{open:false}">
+                    <button @click="open = !open">Voir LUNATIC</button>
+                    <p x-show="open"><img src="public/img/LUNATIC.webp" alt="Album LUNATIC" style="width:200px;height:200px;"></p>
+                </section>
+
+                <footer>
+                    <br><ft>Accueil - Articles - Nous contacter - A propos</ft>
+                    <br><ff> Menu d'acceuil  Le Vélodrome  Bad Boys  Marcel Pagnol  Adaptation ciné  Idées reçues  Formulaire de contact  A propos de nous  Autre projets  Glossaire  En savoir plus</ff>
+            
+                </footer>
+              </body>
+            </html>
