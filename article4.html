@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Article1</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    </head>
+
+    <body>
+        <!-- https://emmet.io/ -->
+        <header>
+            <a href="index.html">MASSILIA</a>
+            <br><little>Le Marseille d'hier</little>
+            <ul id="menu-vertical">
+                <li><a href="#">MENU</a>
+                  <ul>
+                    <li><a href="article1.html">Vélodrome</a></li>
+                    <li><a href="article2.html">Bad Boys</a></li>
+                    <li><a href="article3.html">Marcel Pagnol</a></li>
+                    <li><a href="article4.html">Adaptation Ciné</a></li>
+                    <li><a href="article5.html">L'avancée technologique</a></li>
+                    <li><a href="article6.html">Les dégâts sur la planète</a></li>
+                    <li><a href="article7.html">Objet de la BU</a></li>
+                  </ul>
+                </li>
+        </header>
+        <article>
+            <br><TitreArtcile>
+                Adaptation Ciné
+            </TitreArtcile>
+            <img src="public/img/Rectangle 6 (3).webp" alt="Work 1" style="width:395px;height:365px;">
+            <textarticle> Le film La gloire de mon père, sortie en salle en 1990 et réalisé par Yves Robert. Est une adaptation cinématographique du célèbre livre de Marcel Pagnol. Ce film retrace ses souvenirs qu’il a vécu à Aubagne. L’histoire se déroule principalement dans la colline du Garlaban (colline sur les hauteurs de Marseille). Dans ce film, il décrit on peut voir une version de Marseille qui paraît toujours d’actualité. </textarticle>
+            <img src="public/img/Famille complet marcel.webp" alt="Cargaison" style="width:395px; 150px;">
+            <textarticle>Les éléments paraissent toujours actuels avec des sorties au Parc Borély. Pour résumer ce film d’Yves Robert est une biographie de Marcel Pagnol vu qu’il s’agit d’une adaptation d’une autobiographie où ce-dernier par à la découverte du paysage et de la culture provençale. Dans la scène où son père, Joseph abats deux oiseaux, a eu un effet chez l’auteur. Car lorsqu’il retourne au village, ce dernier glorifie son père, et lui rends hommage en nommant son livre « la gloire de mon père ». Ce film m’a permis à l’époque de mieux comprendre l’histoire de ce livre. </textarticle>
+            <img src="public/img/Joseph.webp" alt="Joseph" style="width:395px; 150px;">
+            <textarticle>En plus les scènes se déroulent dans ma région, Les bouches du Rhône. Des scènes simples avec des répliques simples. Les phrases sont peu complexes avec un accent prononcé. Marcel écrit son livre avec un vocabulaire de quand il était petit. Le metteur en scène du film a permis de reproduire cette ambiance enfantine. Regarder ce film permet d’avoir une autre approche a ce livre. Malgré l’écart temporel entre le film et maintenant (son visionnage), les événements sont toujours modernes avec des idées toujours en place.</textarticle>
+            <img src="public/img/PF01.webp" alt="Image 01" style="width:395px; 150px;">
+            <img src="public/img/PF02.webp" alt="Image 02" style="width:395px; 150px;">
+
+            <div class="accordeon">
+                <section x-data="{open:false}">
+                    <button @click="open = !open">En savoir plus sur le film</button>
+                    <h2 x-show="open"><img src="public/img/GDMPAFFICHE.webp" alt="Affiche film" style="width:145px;height:200px;">
+                        <br>Évocation de l'enfance heureuse de l'écrivain français Marcel Pagnol, et de ses vacances familiales à la campagne.
+                    <a href="https://www.youtube.com/watch?v=830jEZuvrxI">
+                        <br>Voir la bande annonce</a>
+                </section>
+            <footer>
+                <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+                <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+            </footer>
+        </body>
+    </html>

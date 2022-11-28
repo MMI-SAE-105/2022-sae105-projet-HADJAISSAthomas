@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Article1</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    </head>
+
+    <body>
+        <!-- https://emmet.io/ -->
+        <header>
+            <a href="index.html">MASSILIA</a>
+            <br><little>Le Marseille d'hier</little>
+            <ul id="menu-vertical">
+                <li><a href="#">MENU</a>
+                  <ul>
+                    <li><a href="article1.html">Vélodrome</a></li>
+                    <li><a href="article2.html">Bad Boys</a></li>
+                    <li><a href="article3.html">Marcel Pagnol</a></li>
+                    <li><a href="article4.html">Adaptation Ciné</a></li>
+                    <li><a href="article5.html">L'avancée technologique</a></li>
+                    <li><a href="article6.html">Les dégâts sur la planète</a></li>
+                    <li><a href="article7.html">Objet de la BU</a></li>
+                  </ul>
+                </li>
+        </header>
+        <article>
+            <br><TitreArtcile>
+                Les dégâts sur la planète
+            </TitreArtcile>
+            <img src="public/img/image 21.webp" alt="Work 1" style="width:395px;height:320px;">
+            <textarticle>Les adolescents du monde entier ont largement intégré les nouvelles technologies dans leur vie courante. Cet engouement s’est rapidement répandu dans la Terre entière, bien qu’il semble encore plus important dans les pays asiatiques comme en témoigne le nombre d’articles scientifiques portant sur ce sujet et provenant des pays comme le Japon et la Corée. </textarticle>
+            <img src="public/img/Science.webp" alt="science" style="width:395px; 150px;">
+            <textarticle>Les anciennes générations à l’époque effectuaient des recherches dans des encyclopédies lorsqu’ils avaient besoin d’informations. On peut prendre comme exemple comment la technologie a-t-elle modifié la façon d’écouter de la musique. Chez moi par exemple près de Marseille, existait un magasin de musique dans les années 90.</textarticle>
+            <img src="public/img/magasincd.webp" alt="magasin" style="width:395px; 150px;">
+            <textarticle>Ce magasin-là, je trouve qu’il a énormément de style, c’est-à-dire je trouve que le fait de se déplacer pour acheter un cd ou disque vinyle avait du caractère. L’achat était un investissement du point de vue du client. De plus l’engouement que créais ce genre de magasin était propre de l’époque. Tout le monde se rendais dans la boutique pour écouter les cd via les casques mis à disposition.</textarticle>
+            <img src="public/img/Magasincd02.webp" alt="magasin02" style="width:395px; 150px;">
+            <textarticle>Aujourd’hui depuis un peu moins de 10ans les plateformes de streaming on fait fermer ces magasins. La puissance de ces géants du streaming ont conquis presque tout le monde. Désormais seulement un abonnement permet d’écouter tous les albums n’importe où sur la planète.</textarticle>
+            <img src="public/img/Plateforme.webp" alt="Plateforme" style="width:395px; 150px;">
+            <textarticle>Autre que le bouleversement chez les clients de musique, ces plateformes on créer un déséquilibre au sein de la SACEM, c’est-à-dire les revenus grâce au droit de chaque artiste. Je trouve que la technologie à bouleverser la façon d’écouter la musique, et j’aurais voulu vivre durant les années 90s, car je trouve cette période chaleureuse. Mais autre que le côté négatif, cette la technologie possède aussi des avantages.</textarticle>
+            
+            <div class="accordeon">
+                <section x-data="{open:false}">
+                    <button @click="open = !open">En savoir plus sur les avantages</button>
+                    <h2 x-show="open">La technologie à avantagé de nombreuse personne. Désormais chaque artiste peut exprimer son travail via les réseaux sociaux...
+                    <a href="article4.html">
+                        <br>L'avancée technologique</a>
+                </section>
+            <footer>
+                <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+                <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+            </footer>
+        </body>
+    </html>

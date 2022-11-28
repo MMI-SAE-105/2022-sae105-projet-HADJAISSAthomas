@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Article1</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    </head>
+
+    <body>
+        <!-- https://emmet.io/ -->
+        <header>
+            <a href="index.html">MASSILIA</a>
+            <br><little>Le Marseille d'hier</little>
+            <ul id="menu-vertical">
+                <li><a href="#">MENU</a>
+                  <ul>
+                    <li><a href="article1.html">Vélodrome</a></li>
+                    <li><a href="article2.html">Bad Boys</a></li>
+                    <li><a href="article3.html">Marcel Pagnol</a></li>
+                    <li><a href="article4.html">Adaptation Ciné</a></li>
+                    <li><a href="article5.html">L'avancée technologique</a></li>
+                    <li><a href="article6.html">Les dégâts sur la planète</a></li>
+                    <li><a href="article7.html">Objet de la BU</a></li>
+                  </ul>
+                </li>
+        </header>
+        <article>
+            <br><TitreArtcile>
+                Marcel Pagnol
+            </TitreArtcile>
+            <img src="public/img/Rectangle 6 (2).webp" alt="Work 1" style="width:395px;height:315px;">
+            <textarticle>Comment parler de Marseille sans évoquer l’écrivain le plus marquant de son époque ! Marcel Pagnol, écrivain du XXème siècle. Originaire de la région Marseillaise plus précisément sur les hauteurs d’Aubagne. Il a marqué son époque grâce à ses œuvres différentes. On connait tous la scène de Marius « La partie de cartes » avec la réplique « tu me fends le cœur ».</textarticle>
+            <img src="public/img/tu me fends le coeur.webp" alt="Scéne jeux de cartes" style="width:395px; 150px;">
+            <textarticle>Mais intéressons-nous à son livre « La gloire de mon père » le premier volume de sa trilogie. Marcel Pagnol est à la fois écrivain, dramaturge et cinéaste. Dans son livre, Marcel Pagnol retrace ses souvenirs qu’il a vécu à Aubagne. Ses souvenir sont bref puisqu’il aura vécu jusqu’à l’âge de 3ans dans la colline du Garlaban (colline sur les hauteurs de Marseille). Dans son œuvre, il décrit une version de Marseille qui paraît toujours d’actualité. Les éléments paraissent toujours actuels avec des sorties au Parc Borély.</textarticle>
+            <img src="public/img/parc borely.webp" alt="Parc Borély XIX" style="width:395px; 150px;">
+            <textarticle>Pour résumer ce roman autobiographique par à la découverte du paysage et de la culture provençale. Ce titre : « La gloire de mon père » reflète l’image qu’a le petit Marcel envers son père. Le jeune homme identifie son père comme un héro, comme une réussite. L’anecdote où son père Joseph abats deux oiseaux, a eu un effet chez l’auteur. Car lorsqu’il retourne au village, ce dernier glorifie son père, et lui rends hommage en nommant son livre « la gloire de mon père ».</textarticle>
+            <img src="public/img/Joseph.webp" alt="Joseph" style="width:395px; 150px;">
+            <textarticle>Ce livre à marquer mon enfance. De plus, il se déroule dans ma région, Les bouches du Rhône. Sa lecture est simple. Les phrases sont peu complexes. Marcel écrit son livre avec un vocabulaire de quand il était petit. Lire ce livre permet d’avoir une vision d’un Marseille d’hier. Malgré l’écart temporel entre son écriture et maintenant (sa lecture) les événements sont toujours modernes avec des idées toujours en place.</textarticle>
+            <img src="public/img/Famille complet marcel.webp" alt="Cargaison" style="width:395px; 150px;">
+            <div class="accordeon">
+                <section x-data="{open:false}">
+                  <button @click="open = !open">En savoir plus sur le livre</button>
+                  <h2 x-show="open"><img src="public/img/Cover livre.webp" alt="cover livre" style="width:135px;height:200px;">
+                    <br>La Gloire de mon père est le premier tome des Souvenirs d'enfance, un roman autobiographique de Marcel Pagnol, paru en 1957.
+                    <a href="https://livre.fnac.com/a1557911/Souvenirs-d-enfance-La-gloire-de-mon-pere-Marcel-Pagnol">
+                        <br>Acheter le livre</a>
+                </section>
+        <footer>
+            <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+            <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+        </footer>
+    </body>
+</html>
