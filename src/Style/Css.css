@@ -35,6 +35,10 @@ a2{font-size: 16px;
     text-align: center;
 }
 
+label{font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#CFAC62}
+
 PaysageB{opacity: 0.2;
 
 }
@@ -102,7 +106,7 @@ N{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#ffffff}
     
-textarticle{font-size: 20px;
+textarticle{font-size: 17px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:#ffffff}
 
@@ -116,4 +120,39 @@ but{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:#CFAC62;}
 
-footer{background-color: #0F2439;}
+footer{background-color: #0F2439;
+}
+
+datefilm{font-size: 20px;
+    font-weight: lighter;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff}
+
+nomfilm{font-size: 20px;
+    font-weight: bolder;
+    /*text-decoration: underline;*/
+    font-family: 'Trebucht MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff}
+soustitre{font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:#ffffff}
+            
+        def{font-size: 20px;
+            font-weight: lighter;
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:#ffffff}
+        
+        mot{font-size: 20px;
+            font-weight: bolder;
+            /*text-decoration: underline;*/
+            text-decoration: underline;
+            font-family: 'Trebucht MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:#ffffff}
+
+.texte_contacte {
+
+                font-size: 18px;
+              }
+

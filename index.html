@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>MASSILIA</title>
     <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
 <body>
     <!-- https://emmet.io/ -->
-    <header>
-        <T class="ce"> MASSILIA</T>
-        <br><little>Le Marseille d'hier</little>
-        <ul id="menu-vertical">
-          <li><a href="#">MENU</a>
+        
+        <header class="header">
+          <button aria-controle="mainNav"
+          @click="menuIsOpen = ! menuIsOpen"
+          class="header_menuBtn"
+          >
+          </button>
+          <T class=titre>MASSILIA</T>
+          <br><little>Le Marseille d'hier</little>
+          <nav 
+            id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.650ms
+            class="menu"
+            >
             <ul>
+              <li><a href="index.html">Page d’accueil</a></li>
+              <br>
+              <h2>_______________</h2>
               <li><a href="article1.html">Vélodrome</a></li>
               <li><a href="article2.html">Bad Boys</a></li>
               <li><a href="article3.html">Marcel Pagnol</a></li>
@@ -24,9 +38,25 @@
               <li><a href="article5.html">L'avancée technologique</a></li>
               <li><a href="article6.html">Les dégâts sur la planète</a></li>
               <li><a href="article7.html">Objet de la BU</a></li>
+              
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="page d’autres projets.html">D’autres projets</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="contact.html">Contacts</a></li>
+              <li><a href="apropos.html">A propos</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="filmographie.html">Filmographie</a></li>
+              <li><a href="glossaire.html">Glossaire</a></li>
             </ul>
-          </li>
-      </header> 
+          </nav>
+        </header>
+
         <br><article> Articles </article> 
         <article>
             <br><a href="article1.html">
@@ -38,7 +68,6 @@
             <h2>
               Un lieu unique en France. Situé proche de la célèbre avenue du Prado, cette enceinte est désormais un lieu de tourisme sur Marseille...</a>
             </h2>
-            <button><but href="article1.html">Voir plus </but></button>
           </article>
           <h2>_____________________________________________</h2>
     
@@ -52,7 +81,6 @@
             <h2>
               Ce son est issu de l’album Métèque et Mat, sorti en 1995 cet album ne fut pas un succès comme avait connu AKH avec le groupe IAM. Paradoxalement à ce « flop » plusieurs singles on connut des succès...</a>
             </h2>
-            <button><but href="article2.html">Voir plus </but></button>
           </article>
           <h2>_____________________________________________</h2>
     
@@ -66,7 +94,7 @@
             <h2>
               Comment parler de Marseille sans évoquer l’écrivain le plus marquant de son époque ! Marcel Pagnol, écrivain du XXème siècle. Originaire de la région Marseillaise plus précisément sur les hauteurs d’Aubagne...</a>
             </h2>
-            <button><but href="article3.html">Voir plus </but></button>
+            
           </article>
           <h2>_____________________________________________</h2>
     
@@ -80,7 +108,7 @@
             <h2>
               Le film La gloire de mon père, sortie en salle en 1990 et réalisé par Yves Robert. Est une adaptation cinématographique du célèbre livre de Marcel Pagnol. Ce film retrace ses souvenirs qu’il a vécu à Aubagne...</a>
             </h2>
-            <button><but href="article4.html">Voir plus </but></button>
+           
           </article>
           <h2>_____________________________________________</h2>
     
@@ -94,7 +122,7 @@
             <h2>
               La technologie à avantagé de nombreuse personne. Désormais chaque artiste peut exprimer son travail via les réseaux sociaux et se créer un auditoire. On peut penser notamment à une personne qui chante très bien...</a>
             </h2>
-            <button><but href="article5.html">Voir plus </but></button>
+            
           </article>
           <h2>_____________________________________________</h2>
 
@@ -122,14 +150,14 @@
             <h2>
               L’homme n’a pas attendu le numérique pour tenter de palier ses faiblesses ou infirmités. Ainsi les premières prothèses dentaires identifiées datent de 5000av. J.-C. Depuis, progrès et innovations se sont succédé</a>
             </h2>
-            <button><but href="article7.html">Voir plus </but></button>
+            
           </article>
           <h2>_____________________________________________</h2>
 
   
     <footer>
       <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
-      <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+      <fr href="thomas.hadj_aissa@edu.univ-fcomte.fr">thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
     </footer>
   </body>
 </html>

@@ -1,32 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Article1</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>MASSILIA</title>
     <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
-    <body>
-        <!-- https://emmet.io/ -->
-        <header>
-            <a href="index.html">MASSILIA</a>
-            <br><little>Le Marseille d'hier</little>
-            <ul id="menu-vertical">
-                <li><a href="#">MENU</a>
-                  <ul>
-                    <li><a href="article1.html">Vélodrome</a></li>
-                    <li><a href="article2.html">Bad Boys</a></li>
-                    <li><a href="article3.html">Marcel Pagnol</a></li>
-                    <li><a href="article4.html">Adaptation Ciné</a></li>
-                    <li><a href="article5.html">L'avancée technologique</a></li>
-                    <li><a href="article6.html">Les dégâts sur la planète</a></li>
-                    <li><a href="article7.html">Objet de la BU</a></li>
-                  </ul>
-                </li>
-        </header>
+<body>
+    <!-- https://emmet.io/ -->
+    <header class="header">
+        <button aria-controle="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn"
+        >
+        </button>
+        <T class=titre>MASSILIA</T>
+        <br><little>Le Marseille d'hier</little>
+        <nav 
+          id="mainNav"
+          x-show="menuIsOpen"
+          x-transition.duration.650ms
+          class="menu"
+          >
+          <ul>
+            <li><a href="index.html">Page d’accueil</a></li>
+            <br>
+            <h2>_______________</h2>
+            <li><a href="article1.html">Vélodrome</a></li>
+            <li><a href="article2.html">Bad Boys</a></li>
+            <li><a href="article3.html">Marcel Pagnol</a></li>
+            <li><a href="article4.html">Adaptation Ciné</a></li>
+            <li><a href="article5.html">L'avancée technologique</a></li>
+            <li><a href="article6.html">Les dégâts sur la planète</a></li>
+            <li><a href="article7.html">Objet de la BU</a></li>
+            
+            <br>
+            <h2>_______________</h2>
+            <br>
+            <li><a href="page d’autres projets.html">D’autres projets</a></li>
+            <br>
+            <h2>_______________</h2>
+            <br>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <br>
+            <h2>_______________</h2>
+            <br>
+            <li><a href="filmographie.html">Filmographie</a></li>
+            <li><a href="glossaire.html">Glossaire</a></li>
+          </ul>
+        </nav>
+      </header>
         <article>
             <br><TitreArtcile>
                 Adaptation Ciné
@@ -45,9 +73,25 @@
                     <button @click="open = !open">En savoir plus sur le film</button>
                     <h2 x-show="open"><img src="public/img/GDMPAFFICHE.webp" alt="Affiche film" style="width:145px;height:200px;">
                         <br>Évocation de l'enfance heureuse de l'écrivain français Marcel Pagnol, et de ses vacances familiales à la campagne.
-                    <a href="https://www.youtube.com/watch?v=830jEZuvrxI">
-                        <br>Voir la bande annonce</a>
+                    
+                        <br><a>Voir la bande annonce</a>
+                        <video controls width="250">
+
+                            <source src="public/video/La Gloire de mon père (1990) Bande Annonce VF [HD].mp4"
+                                    type="video/webm">
+                        
+                            <source src="/media/cc0-videos/flower.mp4"
+                                    type="video/mp4">
+                        
+                            Download the
+                            <a href="https://www.youtube.com/watch?v=830jEZuvrxI">WEBM</a>
+                            or
+                            <a href="https://www.youtube.com/watch?v=830jEZuvrxI">MP4</a>
+                            video.
+                        </video>
+                        
                 </section>
+                
             <footer>
                 <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
                 <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>

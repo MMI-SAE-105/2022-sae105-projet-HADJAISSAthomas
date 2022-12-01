@@ -1,37 +1,75 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Article1</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>MASSILIA</title>
     <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
 
-    <body>
-        <!-- https://emmet.io/ -->
-        <header>
-            <a href="index.html">MASSILIA</a>
-            <br><little>Le Marseille d'hier</little>
-            <ul id="menu-vertical">
-                <li><a href="#">MENU</a>
-                  <ul>
-                    <li><a href="article1.html">Vélodrome</a></li>
-                    <li><a href="article2.html">Bad Boys</a></li>
-                    <li><a href="article3.html">Marcel Pagnol</a></li>
-                    <li><a href="article4.html">Adaptation Ciné</a></li>
-                    <li><a href="article5.html">L'avancée technologique</a></li>
-                    <li><a href="article6.html">Les dégâts sur la planète</a></li>
-                    <li><a href="article7.html">Objet de la BU</a></li>
-                  </ul>
-                </li>
-        </header>
+<body>
+    <!-- https://emmet.io/ -->
+    <header class="header">
+      <button aria-controle="mainNav"
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header_menuBtn"
+      >
+      </button>
+      <T class=titre>MASSILIA</T>
+      <br><little>Le Marseille d'hier</little>
+      <nav 
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.650ms
+        class="menu"
+        >
+        <ul>
+          <li><a href="index.html">Page d’accueil</a></li>
+          <br>
+          <h2>_______________</h2>
+          <li><a href="article1.html">Vélodrome</a></li>
+          <li><a href="article2.html">Bad Boys</a></li>
+          <li><a href="article3.html">Marcel Pagnol</a></li>
+          <li><a href="article4.html">Adaptation Ciné</a></li>
+          <li><a href="article5.html">L'avancée technologique</a></li>
+          <li><a href="article6.html">Les dégâts sur la planète</a></li>
+          <li><a href="article7.html">Objet de la BU</a></li>
+          
+          <br>
+          <h2>_______________</h2>
+          <br>
+          <li><a href="page d’autres projets.html">D’autres projets</a></li>
+          <br>
+          <h2>_______________</h2>
+          <br>
+          <li><a href="contact.html">Contacts</a></li>
+          <li><a href="apropos.html">A propos</a></li>
+          <br>
+          <h2>_______________</h2>
+          <br>
+          <li><a href="filmographie.html">Filmographie</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
+        </ul>
+      </nav>
+    </header>
         <article>
             <br><TitreArtcile>
                 Bad Boys
             </TitreArtcile>
             <br><img src="public/img/image 22.webp" alt="Image Bad Boys" style="width:395px;height:395px;">
+            <figure>
+              <figcaption>Ecouter le son :</figcaption>
+              <audio
+                  controls
+                  src="public/img/Akhenaton - bad boys de Marseille 2.mp3">
+                      <a href="public/img/Akhenaton - bad boys de Marseille 2.mp3">
+                          Download audio
+                      </a>
+              </audio>
+          </figure>
             <textarticle> Ce son est issu de l’album Métèque et Mat, sorti en 1995 cet album ne fut pas un succès comme avait connu AKH avec le groupe IAM. Paradoxalement à ce « flop » plusieurs singles on connut des succès comme le son « Bad Boys de Marseille Part.2 ». Utilisé notamment par le Stade Vélodrome pour l’entrainement de ses joueurs, le son est une référence de l’identité marseillaise.</textarticle>
             <img src="public/img/une-petite-histoire-du-rap-marseillais,M130002 2.webp" alt="Groupe Marseillais" style="width:395px; 150px;">
             <textarticle> Dans son single AKH décris le comportement de la majorité des Marseillais. Il suit la tendance musicale de l’époque : le R&B. Issus du rap Akhenaton a sue se faire une place au sein de la musique Française. Pour réaliser ce track qui tournera en boucle sur toutes les radios de l’époque AKH invitera son ami Shurik’n ainsi que le groupe Fonky Familily qui émerge dans la musique marseillaise. Dès le début du son, on peut tout de suite apercevoir une sonorité qui n’est pas habituel a l’époque. L’instrumental ramène du soleil a la musique. Ensuite comme à son habitude Akhenaton ouvre la voie avec un couplet qui décris le contexte de l’écriture de sa musique.</textarticle>
@@ -40,6 +78,7 @@
             <img src="public/img/NTM FF 01.webp" alt="Image NTM01" style="width:395px; 150px;">
             <img src="public/img/NTM FF 02.webp" alt="Image NTM02" style="width:395px; 150px;">
             <textarticle>Ayant des goûts musicaux qui ont évoluer, je me suis d’avantage intéressé a la musique des années 90’s notamment le hip hop. Avec pour première écoute un son de IAM, qui ce groupe issu de Marseille représente la culture et la mentalité marseillaise, c’est-à-dire le partage, la mixité.</textarticle>
+            
             <div class="accordeon">
                 <section x-data="{open:false}">
                   <button @click="open = !open">Voir NTM</button>
@@ -56,6 +95,7 @@
                         <br>Lunatic est un duo de hip-hop français, originaire des Hauts-de-Seine. Le groupe se forme en 1994 par Booba et Ali.
                     <a href="https://fr.wikipedia.org/wiki/Lunatic">
                         <br>En savoir plus sur LUNATIC</a>
+                  
                 </section>
 
                 <footer>

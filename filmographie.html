@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MASSILIA</title>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+<body>
+    <!-- https://emmet.io/ -->
+    <header class="header">
+      <button aria-controle="mainNav"
+      @click="menuIsOpen = ! menuIsOpen"
+      class="header_menuBtn"
+      >
+      </button>
+      <T class=titre>MASSILIA</T>
+      <br><little>Le Marseille d'hier</little>
+      <nav 
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.650ms
+        class="menu"
+        >
+        <ul>
+          <li><a href="index.html">Page d’accueil</a></li>
+          <br>
+          <h2>_______________</h2>
+          <li><a href="article1.html">Vélodrome</a></li>
+          <li><a href="article2.html">Bad Boys</a></li>
+          <li><a href="article3.html">Marcel Pagnol</a></li>
+          <li><a href="article4.html">Adaptation Ciné</a></li>
+          <li><a href="article5.html">L'avancée technologique</a></li>
+          <li><a href="article6.html">Les dégâts sur la planète</a></li>
+          <li><a href="article7.html">Objet de la BU</a></li>
+          
+          <br>
+          <h2>_______________</h2>
+          <br>
+          <li><a href="page d’autres projets.html">D’autres projets</a></li>
+          <br>
+          <h2>_______________</h2>
+          <br>
+          <li><a href="contact.html">Contacts</a></li>
+          <li><a href="apropos.html">A propos</a></li>
+          <br>
+          <h2>_______________</h2>
+          <br>
+          <li><a href="filmographie.html">Filmographie</a></li>
+          <li><a href="glossaire.html">Glossaire</a></li>
+        </ul>
+      </nav>
+    </header>
+      <article>
+        <br><TitreArtcile>
+            Filmographie
+        </TitreArtcile>
+        <datefilm><li>1967</li></datefilm>
+        <nomfilm>La Guerre des Boutons</nomfilm>
+        <img src="public/img/GDB.webp" alt="GDB" style="width:370px;height:270px;">
+        <textarticle>Comme tous les ans, à chaque rentrée des classes, les enfants de Longeverne se querellent avec ceux de Velrans. Cette année sera différente puisque Lebrac et ses camarades viennent d'avoir l'idée d'arracher les boutons et les bretelles de leurs ennemis afin de les faire rosser par leurs parents et, eux-mêmes, combattent entièrement nus et gardent les boutons arrachés à leurs ennemis comme trésor de guerre dans une cabane.</textarticle>
+        <datefilm><li>1997</li></datefilm>
+        <nomfilm>Alexandre le Bienheureux</nomfilm>  
+        <img src="public/img/ALB.webp" alt="ALB" style="width:370px; 270px;">
+        <textarticle>Alexandre, homme bon vivant et nonchalant, est cultivateur dans une ferme française de la Beauce. Cependant sa vie quotidienne est dirigée par « la Grande », son ambitieuse mais tyrannique épouse, qui l'épuise en lui imposant chaque jour une liste de travaux démesurée. Devenu brutalement veuf, il éprouve un grand soulagement et se sent libéré de son labeur : il décide de s'accorder un repos qu'il juge mérité, afin de prendre le temps de savourer la vie</textarticle>
+         
+        <footer>
+            <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+            <fr href="thomas.hadj_aissa@edu.univ-fcomte.fr">thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+          </footer>
+        </body>
+      </html>
