@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MASSILIA</title>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+<body>
+    <!-- https://emmet.io/ -->
+        
+        <header class="header">
+          <button aria-controle="mainNav"
+          @click="menuIsOpen = ! menuIsOpen"
+          class="header_menuBtn"
+          >
+          </button>
+          <T class=titre>MASSILIA</T>
+          <br><little>The Marseille of yesterday</little>
+          <nav 
+            id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.650ms
+            class="menu"
+            >
+            <ul>
+              <li><a href="index.html">Home page</a></li>
+              <br>
+              <h2>_______________</h2>
+              <li><a href="ENarticle1.html">Velodrome</a></li>
+              <li><a href="ENarticle2.html">Bad Boys</a></li>
+              <li><a href="ENarticle3.html">Marcel Pagnol</a></li>
+              <li><a href="ENarticle4.html">Movie</a></li>
+              <li><a href="ENarticle5.html">technological advancement</a></li>
+              <li><a href="ENarticle6.html">The damage to the world</a></li>
+              <li><a href="ENarticle7.html">Object of the University Library</a></li>
+              
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENpage d’autres projets.html">Other Project</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENcontact.html">Contact form</a></li>
+              <li><a href="ENapropos.html">About us</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENfilmographie.html">Filmography</a></li>
+              <li><a href="ENglossaire.html">Glossary</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="index.html">FRANCAIS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <article>
+            <br><TitreArtcile>
+                Marcel Pagnol
+            </TitreArtcile>
+            <img src="public/img/Rectangle 6 (2).webp" alt="Work 1" style="width:395px;height:315px;">
+            <textarticle>How can we speak of Marseille without evoking the most striking writer of his time! Marcel Pagnol, writer of the 20th century. Originally from the Marseilles region, more precisely on the heights of Aubagne. He marked his time thanks to his different works. We all know the scene of Marius «The game of cards» with the line «you break my heart».
+               </textarticle>
+            <img src="public/img/tu me fends le coeur.webp" alt="Scéne jeux de cartes" style="width:395px; 150px;">
+            <textarticle> But let’s look at his book «La gloire de mon père» the first volume of his trilogy. Marcel Pagnol is a writer, playwright and filmmaker. In his book, Marcel Pagnol recounts his memories of living in Aubagne. His memories are brief since he lived until the age of 3 in the hill of Garlaban (hill on the heights of Marseille). In his work, he describes a version of Marseille that still seems relevant. The elements still seem current with outings to Parc Borély.</textarticle>
+            <img src="public/img/parc borely.webp" alt="Parc Borély XIX" style="width:395px; 150px;">
+            <textarticle> To summarize this autobiographical novel by discovering the landscape and Provencal culture. This title: «The glory of my father» reflects the image that little Marcel has towards his father. The young man identifies his father as a hero, as a success story. The anecdote where his father Joseph slaughtered two birds, had an effect on the author. When he returns to the village, the latter glorifies his father, and pays tribute to him by naming his book «the glory of my father».</textarticle>
+            <img src="public/img/Joseph.webp" alt="Joseph" style="width:395px; 150px;">
+            <textarticle>This book marks my childhood. Moreover, it takes place in my region, Les bouches du Rhône. Its reading is simple. The sentences are not very complex. Marcel writes his book with a vocabulary of when he was little. Reading this book allows to have a vision of a Marseille of yesterday. Despite the time gap between his writing and now ( his reading) events are still modern with ideas still in place.</textarticle>
+            <img src="public/img/Famille complet marcel.webp" alt="Cargaison" style="width:395px; 150px;">
+            <div class="accordeon">
+                <section x-data="{open:false}">
+                  <button @click="open = !open">Learn more about the book</button>
+                  <h2 x-show="open"><img src="public/img/Cover livre.webp" alt="cover livre" style="width:135px;height:200px;">
+                    <br>My Father's Glory is the first volume of childhood memories, an autobiographical novel by Marcel Pagnol, published in 1957.
+                    <a href="https://livre.fnac.com/a1557911/Souvenirs-d-enfance-La-gloire-de-mon-pere-Marcel-Pagnol">
+                        <br>Buy the book</a>
+                </section>
+        <footer>
+            <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+            <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+        </footer>
+    </body>
+</html>

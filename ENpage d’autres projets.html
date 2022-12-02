@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MASSILIA</title>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+<body>
+    <!-- https://emmet.io/ -->
+        
+        <header class="header">
+          <button aria-controle="mainNav"
+          @click="menuIsOpen = ! menuIsOpen"
+          class="header_menuBtn"
+          >
+          </button>
+          <T class=titre>MASSILIA</T>
+          <br><little>The Marseille of yesterday</little>
+          <nav 
+            id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.650ms
+            class="menu"
+            >
+            <ul>
+              <li><a href="index.html">Home page</a></li>
+              <br>
+              <h2>_______________</h2>
+              <li><a href="ENarticle1.html">Velodrome</a></li>
+              <li><a href="ENarticle2.html">Bad Boys</a></li>
+              <li><a href="ENarticle3.html">Marcel Pagnol</a></li>
+              <li><a href="ENarticle4.html">Movie</a></li>
+              <li><a href="ENarticle5.html">technological advancement</a></li>
+              <li><a href="ENarticle6.html">The damage to the world</a></li>
+              <li><a href="ENarticle7.html">Object of the University Library</a></li>
+              
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENpage d’autres projets.html">Other Project</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENcontact.html">Contact form</a></li>
+              <li><a href="ENapropos.html">About us</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENfilmographie.html">Filmography</a></li>
+              <li><a href="ENglossaire.html">Glossary</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="index.html">FRANCAIS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <article>
+          <br><TitreArtcile>
+            D'autres projets
+        </TitreArtcile>
+
+
+        <mot><li>R-Level</li></mot>
+        <mot><li>Tick Tock Time</li></mot>
+        <mot><li>Reverse</li></mot>
+        <mot><li>X’plore</li></mot>
+        <mot><li>Autorama</li></mot>
+        <mot><li>Souvenir d’avant</li></mot>
+        <mot><li>X to 1</li></mot>
+        <mot><li>Racines</li></mot>
+        <mot><li>A journey between dreams and reality</li></mot>
+        <mot><li>Endless War</li></mot>
+        <mot><li>Libert’Thé</li></mot>
+        <mot><li>Paris une ressource infinie</li></mot>
+
+
+        <footer>
+          <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS</fr>
+          <fr><br>- BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+          <br> <fr href="thomas.hadj_aissa@edu.univ-fcomte.fr">thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+        </footer>
+      </body>
+      </html>
+        

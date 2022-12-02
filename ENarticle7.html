@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MASSILIA</title>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+<body>
+    <!-- https://emmet.io/ -->
+        
+        <header class="header">
+          <button aria-controle="mainNav"
+          @click="menuIsOpen = ! menuIsOpen"
+          class="header_menuBtn"
+          >
+          </button>
+          <T class=titre>MASSILIA</T>
+          <br><little>The Marseille of yesterday</little>
+          <nav 
+            id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.650ms
+            class="menu"
+            >
+            <ul>
+              <li><a href="index.html">Home page</a></li>
+              <br>
+              <h2>_______________</h2>
+              <li><a href="ENarticle1.html">Velodrome</a></li>
+              <li><a href="ENarticle2.html">Bad Boys</a></li>
+              <li><a href="ENarticle3.html">Marcel Pagnol</a></li>
+              <li><a href="ENarticle4.html">Movie</a></li>
+              <li><a href="ENarticle5.html">technological advancement</a></li>
+              <li><a href="ENarticle6.html">The damage to the world</a></li>
+              <li><a href="ENarticle7.html">Object of the University Library</a></li>
+              
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENpage d’autres projets.html">Other Project</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENcontact.html">Contact form</a></li>
+              <li><a href="ENapropos.html">About us</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENfilmographie.html">Filmography</a></li>
+              <li><a href="ENglossaire.html">Glossary</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="index.html">FRANCAIS</a></li>
+            </ul>
+          </nav>
+        </header>
+      <article>
+        <br><TitreArtcile>
+            Objet de la BU
+        </TitreArtcile>
+        <img src="public/img/image 11.webp" alt="Work 1" style="width:395px;height:320px;">
+        <textarticle>L’homme n’a pas attendu le numérique pour tenter de palier ses faiblesses ou infirmités. Ainsi les premières prothèses dentaires identifiées datent de 5000av. J.-C. Depuis, progrès et innovations se sont succédé</textarticle>
+        <img src="public/img/Atelle pied.webp" alt="pied" style="width:395px; 150px;">
+        <textarticle>Dans leur article, il consacre une rubrique spécialisée sur l’homme augmenté. Il retrace la médecine numérique tout au long des siècles. Il explique qu’en 3000av. J.-C. les Egyptiens fabriquaient des pieds et des orteils en bois pour équiper les amputés. Au XVIème siècle, le chirurgien français Ambroise Paré s’empare de la question des prothèses orthopédiques. Grâce au concours d’un serrurier et d’un horloger, cet esprit éclairé apporte des améliorations avancées aux prothèses articulées afin de reproduire mécaniquement le mouvement naturel des membres.</textarticle>
+        <img src="public/img/main.webp" alt="main" style="width:395px; 150px;">
+        <textarticle>En 1727, l’opticien britannique Scarlett met au point un concept révolutionnaire : des lunettes aux branches rigides terminées par des anneaux assurant une tenue parfaite. Puis en 187, l’Américain John Wesley Hyatt découvre un matériau révolutionnaire, le celluloïd, un plastique très léger qui autorise des formes de montures jamais vues auparavant et contribue à la baisse du prix de revient</textarticle>
+        <img src="public/img/lunette.webp" alt="lunette" style="width:395px; 150px;">
+        <textarticle>La plupart des prothèses évoluées font appel à des moteurs commandés par les signaux myoélectriques envoyés par le cerveau vers les muscles situé au-dessus du membre amputé. Le bras bionique conçu en 2005 pour Claudia Mitchell, une ex-marine américaine, répond à une autre logique. Imaginée par les chirurgiens du Rehabilitation Institute of Chicago, la prothèse communique avec le cerveau, une puce analysant une centaine de signaux neuronaux et commandant les 22 fonctions distinctes de la prothèse</textarticle>
+        <img src="public/img/bras bionique.webp" alt="bras" style="width:395px; 150px;">
+        <textarticle>C’est en 2020 qu’une équipe de scientifiques américano-hongkongaise a développé un œil bionique baptisé EC-EYE. Ce prototype est constitué de minuscules capteurs qui imitent les cellules photoréceptrices de l’œil humain. Disposés sur une membrane en aluminium et tungstène en forme de demi-sphère de moins de trois centimètres de diamètre, les capteurs se combinent afin de reconstituer la rétine.</textarticle>
+
+      <footer>
+        <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+        <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+      </footer>
+    </body>
+  </html>

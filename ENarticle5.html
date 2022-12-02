@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MASSILIA</title>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+<body>
+    <!-- https://emmet.io/ -->
+        
+        <header class="header">
+          <button aria-controle="mainNav"
+          @click="menuIsOpen = ! menuIsOpen"
+          class="header_menuBtn"
+          >
+          </button>
+          <T class=titre>MASSILIA</T>
+          <br><little>The Marseille of yesterday</little>
+          <nav 
+            id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.650ms
+            class="menu"
+            >
+            <ul>
+              <li><a href="index.html">Home page</a></li>
+              <br>
+              <h2>_______________</h2>
+              <li><a href="ENarticle1.html">Velodrome</a></li>
+              <li><a href="ENarticle2.html">Bad Boys</a></li>
+              <li><a href="ENarticle3.html">Marcel Pagnol</a></li>
+              <li><a href="ENarticle4.html">Movie</a></li>
+              <li><a href="ENarticle5.html">technological advancement</a></li>
+              <li><a href="ENarticle6.html">The damage to the world</a></li>
+              <li><a href="ENarticle7.html">Object of the University Library</a></li>
+              
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENpage d’autres projets.html">Other Project</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENcontact.html">Contact form</a></li>
+              <li><a href="ENapropos.html">About us</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENfilmographie.html">Filmography</a></li>
+              <li><a href="ENglossaire.html">Glossary</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="index.html">FRANCAIS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <article>
+            <br><TitreArtcile>
+                L'avancée technologique
+            </TitreArtcile>
+            <img src="public/img/Rectangle 6 (4).webp" alt="Work 1"style="width:395px;height:355px;">
+            <textarticle>La technologie à avantagé de nombreuse personne. Désormais chaque artiste peut exprimer son travail via les réseaux sociaux et se créer un auditoire. On peut penser notamment à une personne qui chante très bien. L’avantage de la technologie peut être de s’exposer sur les réseaux sociaux pour essayer d’être repéré par des producteurs ou alors pour des castings. </textarticle>
+            <img src="public/img/casting.webp" alt="casting" style="width:395px; 150px;">
+            <textarticle>Mais la technologie a aidé la médecine. En reprenant les propos sur la médecine. Pour autre utilisations on peut parler de réalité augmentée (AR) où cette dernière fait référence au concept d'infographie en direct ajoutée à la vision du monde réel. Il permet aux utilisateurs d'interagir avec un environnement numérique tout en restant dans le monde réel. En superposant des informations numériques sur le monde réel, il améliore votre perception du monde physique</textarticle>
+            <img src="public/img/reality.webp" alt="AR01" style="width:395px; 150px;">
+            <textarticle>Depuis que la technologie RA a parcouru un long chemin, elle offre une meilleure utilisation pour le divertissement et l'aspect pratique. La réalité augmentée (AR) fusionne le monde réel avec des données générées par un ordinateur pour en créer une version améliorée. Par exemple, vous pouvez utiliser l’AR pour afficher les mises à jour du trafic en temps réel ou pour planifier vos activités quotidiennes. Un utilisateur peut également se promener et découvrir où se trouvent les cartes publiques ou comment se rendre quelque part. De cette façon, les gens utilisent la RA à des fins sociales et récréatives ainsi que pour le travail. Les applications de la réalité augmentée sont infinies dans la façon dont vous pouvez l'utiliser pour améliorer votre vie.</textarticle>
+            <img src="public/img/reality02.webp" alt="AR02" style="width:395px; 150px;">
+            <textarticle>La technologie de réalité augmentée a parcouru un long chemin depuis sa création, il y a plus de 50 ans. Maintenant, cette technologie a des applications dans le divertissement, l'éducation et la navigation. Le plus grand obstacle pour cette technologie est la création de modèles 3D homogènes qui doit réalistes pour l'utilisateur. Cependant, une fois cet obstacle surmonté, la réalité augmentée révolutionnera la façon dont nous interagissons quotidiennement avec notre environnement !</textarticle>
+            <img src="public/img/reality03.webp" alt="AR03" style="width:395px; 150px;">
+            <footer>
+                <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+                <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+            </footer>
+        </body>
+    </html>
