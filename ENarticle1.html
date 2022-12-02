@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{dd1Open: false, dd2Open: false, dd3Open: false, menuIsOpen: false}"  :class="{noscroll:menuIsOpen,}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MASSILIA</title>
+    <link rel="stylesheet" href="src/Style/Css.css">
+    <link rel="stylesheet" href="src/Style/header.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+
+<body>
+    <!-- https://emmet.io/ -->
+        
+        <header class="header">
+          <button aria-controle="mainNav"
+          @click="menuIsOpen = ! menuIsOpen"
+          class="header_menuBtn"
+          >
+          </button>
+          <T class=titre>MASSILIA</T>
+          <br><little>The Marseille of yesterday</little>
+          <nav 
+            id="mainNav"
+            x-show="menuIsOpen"
+            x-transition.duration.650ms
+            class="menu"
+            >
+            <ul>
+              <li><a href="index.html">Home page</a></li>
+              <br>
+              <h2>_______________</h2>
+              <li><a href="ENarticle1.html">Velodrome</a></li>
+              <li><a href="ENarticle2.html">Bad Boys</a></li>
+              <li><a href="ENarticle3.html">Marcel Pagnol</a></li>
+              <li><a href="ENarticle4.html">Movie</a></li>
+              <li><a href="ENarticle5.html">technological advancement</a></li>
+              <li><a href="ENarticle6.html">The damage to the world</a></li>
+              <li><a href="ENarticle7.html">Object of the University Library</a></li>
+              
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENpage d’autres projets.html">Others Project</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENcontact.html">Contact form</a></li>
+              <li><a href="ENapropos.html">About us</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="ENfilmographie.html">Filmography</a></li>
+              <li><a href="ENglossaire.html">Glossary</a></li>
+              <br>
+              <h2>_______________</h2>
+              <br>
+              <li><a href="index.html">FRANCAIS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <article>
+            <br><TitreArtcile>
+                Vélodrome
+            </TitreArtcile>
+            <br><img src="public/img/Rectangle 6.webp" alt="Image Vélodrome" style="width:395px;height:345px;">
+            
+            <textarticle>
+              The Velodrome stadium. A unique place in France. Located near the famous avenue du Prado, this place is now a tourist place in Marseille. Apart from its footballistic side this cosmopolitan place gathers diverse population. In this stage no aggressive behavior towards his neighbor.From a sporting point of view, this lawn smells like Cristiano Ronaldo, Lionel Messi or Neymar. 
+              </a>
+            </textarticle>
+            <img src="public/img/image 16.webp" alt="Carte" style="width:300px;height:200px;">
+            <br><textarticle>
+              Chosen one of the most beautiful stadium in Europe the atmosphere is unique. 6 associations to ensure the show. It is a place to adore young people. It was inaugurated in 1937. Then it was renovated with a view to the euro 2016. A cost of almost 270 Million€. Since the beginning of the season the Orange Velodrome is sold out. Despite the increase in the price of seats at the stadium (increase made by the Marseille City Hall to reimburse the €100m remaining to be paid until 2046) the enthusiasm of the supporters does not fall back. This sports venue located in the 8th Arrondissement, is very well served by transport networks, including the metro. On the Boulevard Michelet several shops such as the Lafayette gallery located in the Prado shopping center can make you wait. Visited Marseille without making a pass in front of the 2nd Stade de France would be Too bad. You want to leave with a souvenir you can go through one of the official shops located on the Cannebière or directly next to the Stade (Jean-Bouin side).
+            </textarticle>
+            <img src="public/img/image 5.webp" alt="Image Vélodrome"style="width:300px;height:200px;">
+            <br><textarticle>
+              The velodrome stadium has more than conquered football because since its renovations several Rugby matches are organized at the Velodrome. To conclude this wonderful stadium is a magical place where time stops for 90 minutes, where everyone is united. Only you are missing to contribute to the festive atmosphere that OM knows and that makes the most tremble of its opponents. OM is us! Come on OM!
+            </textarticle>
+
+                <div class="accordeon">
+                  <section x-data="{open:false}">
+                    <button @click="open = !open">See the Timeline
+                      
+                    </button>
+                    <h2 x-show="open"><img src ="public/img/Group 17.webp" alt="frise" style="width:390px;height:750px">
+                  </section>
+        <footer>
+            <fr>Copyright Masssilia.fr - Tous droits réservés HADJ-AISSA THOMAS - BUT MMI - DEPARTEMENT BELFORT-MONTBELIARD</fr>
+            <fr>thomas.hadj_aissa@edu.univ-fcomte.fr</fr>
+        </footer>
+      </body>
+    </html>
