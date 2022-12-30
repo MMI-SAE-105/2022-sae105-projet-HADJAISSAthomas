@@ -1,24 +1,3 @@
-.menu {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 217vw;
-    background: #161029;
-    display: grid;
-    place-content: center;
-    font-size: 18px;
-    z-index: 9;
-    }
-  .header_menuBtn {
-    position: relative;
-    z-index: 10;
-    display: block;
-    height: 10vw;
-    width: 10vw;
-    background-color: #fafafa;
-    }
 
   footer {
     background-color: #0F2439;
