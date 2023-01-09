@@ -1,6 +1,6 @@
-- NOM : 
-- PRÉNOM :
-- URL du site :
+- NOM : HADJ-AISSA
+- PRÉNOM : Thomas
+- URL du site : https://massilia.thomashadjaissa.fr
 - URL FIGMA :
 
 # Structure de départ pour le projet individuel.
